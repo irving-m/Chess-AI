@@ -1,6 +1,16 @@
 
 class Piece():
     def __init__(self, name, color, value, texture, texture_rect= None):
+        self.name = name
+        self.color = color
+
+        value_sign = 1 if color == "white" else -1
+        self.value = value * value_sign
+
+        self.set_texture()
+        self.texture_rect = texture_rect
+    
+    def set_texture():
         pass
 
 
